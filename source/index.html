@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Slider</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="books">
+                <div class="books__slider">
+                    <div class="books__frame">
+                        <ul class="books__slides"></ul>
+                    </div>
+                    <button class="books__button button books__button--left">
+                        <svg class="button__icon" width="70" height="70">
+                            <use xlink:href="#left"></use>
+                        </svg>
+                    </button>
+                    <button class="books__button books__button--right button">
+                        <svg class="button__icon" width="70" height="70">
+                            <use xlink:href="#right"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="books__result" id="feedback">
+                    <table class="total">
+                        <tr class="total__title">
+                            <th>Название</th>
+                            <th>Цена с учетом скидки</th>
+                        </tr>
+                        <tr>
+                            <td class="total__sum">Итог</td>
+                            <td class="total__sum total__sum--price"></td>
+                        </tr>
+                        <tr>
+                            <td class="total__sum">Скидка</td>
+                            <td class="total__sum  total__sum--discount"></td>
+                        </tr>
+                        <tr>
+                            <td class="total__sum">Сумма без скидки</td>
+                            <td class="total__sum total__sum--full"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <symbol id="left" viewBox="0 0 24 24">
+                <path d="M15.41,16.59L10.83,12l4.58-4.59L14,6l-6,6l6,6L15.41,16.59z"></path>
+                <path fill="none" d="M0,0h24v24H0V0z"></path>
+            </symbol>
+            <symbol id="right" viewBox="0 0 24 24">
+                <path d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"></path>
+                <path fill="none" d="M0,0h24v24H0V0z"></path>
+            </symbol>
+        </svg>
+    </body>
+
+
+</html>

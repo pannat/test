@@ -1,0 +1,28 @@
+.total {
+    display: none;
+    width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.total__show {
+    display: block;
+}
+
+.total td,
+.total th {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.total__name {
+    width: 750px;
+}
+
+.total__price {
+    width: 150px;
+}
+
+.total__sum {
+    font-weight: 700;
+}

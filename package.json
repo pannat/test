@@ -1,0 +1,29 @@
+{
+  "name": "Slider",
+  "version": "0.1.0",
+  "description": "Тестовое задание",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.3.1",
+    "gulp": "^3.9.1",
+    "posthtml-include": "1.2.0"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "browser-sync": "^2.24.6",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-sass": "^4.0.2",
+    "stylelint": "^9.4.0",
+    "stylelint-config-htmlacademy": "^0.1.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp style",
+    "start": "npm run build && gulp serve"
+  }
+}

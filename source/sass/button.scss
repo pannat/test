@@ -1,0 +1,16 @@
+.button {
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    background-color: transparent;
+}
+
+.button__icon {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.button:hover .button__icon,
+.button:active .button__icon {
+    fill: rgba(0, 0, 0, 1);
+}

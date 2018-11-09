@@ -1,0 +1,94 @@
+.books {
+    margin-top: 200px;
+}
+
+.books__frame {
+    margin: 0 auto;
+    padding: 10px;
+    width: 760px;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.books__slider {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.books__slides {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.books__card {
+    margin-right: 20px;
+    padding: 19px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.books__card:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1),
+        -2px 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.books__photo {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.books__title {
+    min-height: 60px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    font-weight: normal;
+    color: $black;
+}
+
+.books__author {
+    min-height: 38px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.books__price {
+    margin: 0;
+    font-weight: 700;
+}
+
+.books__discount {
+    min-height: 19px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.books__button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -35px;
+}
+
+.books__button--right {
+    right: 0;
+    left: auto;
+}
+
+.books__card.ui-selected {
+    background-color: transparent;
+}
+
+.books__card.ui-chosen {
+    background-color: #e3e3e3;
+}
